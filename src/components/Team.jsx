@@ -39,12 +39,12 @@ const teamMembers = [
 ];
 const Team = () => {
   return (
-    <div id="team">
-      <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+    <div id="team" className="">
+      <section className="dark:bg-gray-900">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-10 lg:px-6">
           <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
             <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              Our team
+              Our Team
             </h2>
             <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
               Explore the whole collection of open-source web components and

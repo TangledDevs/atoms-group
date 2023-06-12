@@ -45,7 +45,7 @@ const Contact = () => {
             Contact Us
           </h2>
           <p className="leading-relaxed mb-5 text-gray-600">
-            If you'd like to get in touch with u, feel free to reach out using
+            If you&apos;d like to get in touch with u, feel free to reach out using
             the contact information below or by filling out the contact form.
           </p>
           <div className="relative mb-4">

@@ -77,9 +77,9 @@ export function Navbar() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-80}
+            offset={40}
             duration={500}
-            className="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 cursor-pointer"
           >
             Contact Us
           </Link>
@@ -127,7 +127,7 @@ export function Navbar() {
                   smooth={true}
                   offset={-80}
                   duration={500}
-                  className="mt-4 w-full rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                  className="mt-4 w-full rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 cursor-pointer"
                 >
                   Contact Us
                 </Link>

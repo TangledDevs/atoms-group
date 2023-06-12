@@ -1,16 +1,13 @@
 
 const Pricing = () => {
   return (
-    <section className="relative overflow-hidden py-10">
+    <section className="relative overflow-hidden">
       <div className="relative mx-auto max-w-7xl px-4">
         <div className="mx-auto mb-24 max-w-2xl text-center lg:max-w-5xl">
           <h1 className="mb-8 text-4xl font-bold tracking-tight text-primary sm:text-6xl lg:text-7xl">
             Pricing
           </h1>
-          <p className="text-lg text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-            blanditiis.
-          </p>
+          
         </div>
         <div className="mx-auto max-w-5xl">
           <div className="flex flex-wrap items-center">

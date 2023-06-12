@@ -1,10 +1,10 @@
 import { BsCheckCircleFill } from "react-icons/bs";
 const PricingNew = () => {
   return (
-    <div id="pricing"> 
+    <div id="pricing" className=""> 
       <section className="text-gray-600 body-font overflow-hidden">
-        <div className="px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
+        <div className="px-5 py-12 mx-auto">
+          <div className="flex flex-col text-center w-full mb-16">
             <h1 className="mb-8 text-6xl font-bold tracking-tight text-primary">
               Pricing
             </h1>
@@ -69,7 +69,7 @@ const PricingNew = () => {
             </div>
             <div className="p-4 xl:w-1/3 md:w-1/2 w-full">
               <div className="h-full p-6 rounded-lg border-2 border-primary flex flex-col relative overflow-hidden hover:scale-110 duration-500 gap-6 ">
-                <span className="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
+                <span className="bg-primary text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
                   POPULAR
                 </span>
                 <div className="flex flex-col justify-center items-center gap-2">
