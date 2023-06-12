@@ -1,15 +1,15 @@
 import { BsCheckCircleFill } from "react-icons/bs";
 const PricingNew = () => {
   return (
-    <div>
+    <div id="pricing"> 
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="mb-8 text-4xl font-bold tracking-tight text-primary sm:text-6xl lg:text-7xl">
+            <h1 className="mb-8 text-6xl font-bold tracking-tight text-primary">
               Pricing
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
+              Browse from the available plans
             </p>
           </div>
           <div className="flex flex-wrap -m-4 justify-center lg:px-20">
@@ -24,7 +24,7 @@ const PricingNew = () => {
                     <span>
                       <strike className="text-gray-400">₹20,000</strike>
                     </span>
-                    <span className="bg-purple-100 text-purple-800 p-1 rounded-r-full rounded-l-full">
+                    <span className="bg-purple-100 text-primary p-1 rounded-r-full rounded-l-full">
                       SAVE 25%
                     </span>
                   </div>
@@ -170,11 +170,17 @@ const PricingNew = () => {
                     </span>
                     1 Year 24/7 Free Support For Website
                   </p>
-                  <p className="flex items-center mb-6">
+                  <p className="flex items-center mb-2">
                     <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
                       <BsCheckCircleFill size={20} className="text-green-500" />
                     </span>
                     100% Responsive Website
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    Annual Maintenace @3000
                   </p>
                 </div>
               </div>

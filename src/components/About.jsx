@@ -1,8 +1,7 @@
-import React from "react";
 
 const About = () => {
   return (
-    <section className="relative w-full bg-primary">
+    <section className="relative w-full bg-primary" id="about">
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
         <div className="relative lg:col-span-5 lg:-ml-8 xl:col-span-6">
           <img
@@ -19,7 +18,7 @@ const About = () => {
           <p className="mt-8 text-lg text-white">
             Atoms Group is a startup committed to providing exceptional services
             in the fields of digital marketing, education, and hospitality.
-            Here's what sets us apart:
+            Here is what sets us apart:
           </p>
           <ul className="mt-8 text-lg text-white list-disc list-inside">
             <li>Passionate experts dedicated to your success</li>

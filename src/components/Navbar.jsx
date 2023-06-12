@@ -2,19 +2,27 @@
 
 import React from "react";
 import { Menu, X } from "lucide-react";
-
+import { Link } from "react-scroll";
 const menuItems = [
   {
     name: "Home",
-    href: "#",
+    href: "home",
   },
   {
     name: "About",
-    href: "#",
+    href: "about",
   },
   {
-    name: "Services",
-    href: "#",
+    name: "Team",
+    href: "team",
+  },
+  {
+    name: "Plans",
+    href: "pricing",
+  },
+  {
+    name: "Testimonials",
+    href: "testimonials",
   },
 ];
 
@@ -29,18 +37,30 @@ export function Navbar() {
     <div className="fixed left-0 top-0 z-50 w-full bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
-          <img src="Atoms-Logo.png" alt="Logo" className="h-8" />
+          <Link activeClass="active"
+                  to={"home"}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  className="font-bold cursor-pointer">
+          <img src="Atoms-Logo.png" alt="Logo" className="h-8 cursor-pointer" /></Link>
         </div>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) => (
               <li key={item.name}>
-                <a
-                  href={item.href}
-                  className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                <Link
+                  activeClass="active"
+                  to={item.href}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  className="font-bold cursor-pointer"
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

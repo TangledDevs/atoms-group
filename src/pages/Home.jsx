@@ -5,6 +5,7 @@ import Testimonial from "../components/Testimonial";
 import Footer from "../components/Footer";
 import PricingNew from "../components/PricingNew";
 import Team from "../components/Team";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -12,10 +13,12 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      <Testimonial />
+      
       {/* <Pricing /> */}
       <Team/>
       <PricingNew/>
+      <Testimonial />
+      <Contact/>
       <Footer />
     </>
   );
