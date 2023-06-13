@@ -13,8 +13,8 @@ const menuItems = [
     href: "about",
   },
   {
-    name: "Team",
-    href: "team",
+    name: "Companies",
+    href: "companies",
   },
   {
     name: "Plans",
@@ -34,8 +34,8 @@ export function Navbar() {
   };
 
   return (
-    <div className="fixed left-0 top-0 z-50 w-full bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+    <header className="fixed left-0 top-0 z-50 w-full bg-white">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <Link
             activeClass="active"
@@ -53,7 +53,7 @@ export function Navbar() {
             />
           </Link>
         </div>
-        <div className="hidden lg:block">
+        <nav className="hidden lg:block bg-slate-200 px-3 py-2 rounded-full">
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) => (
               <li key={item.name}>
@@ -64,14 +64,14 @@ export function Navbar() {
                   smooth={true}
                   offset={-80}
                   duration={500}
-                  className="font-semibold cursor-pointer"
+                  className="font-semibold cursor-pointer px-2 hover:bg-white hover:rounded-full hover:py-[0.3rem]"
                 >
                   {item.name}
                 </Link>
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
         <div className="hidden lg:block">
           <Link
             to="contact"
@@ -114,7 +114,7 @@ export function Navbar() {
                         href={item.href}
                         className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                       >
-                        <span className="ml-3 text-base font-medium text-gray-900">
+                        <span className=" text-base font-medium text-gray-900">
                           {item.name}
                         </span>
                       </a>
@@ -127,7 +127,7 @@ export function Navbar() {
                   smooth={true}
                   offset={-80}
                   duration={500}
-                  className="mt-4 w-full rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 cursor-pointer"
+                  className="block mt-4 w-full rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 cursor-pointer"
                 >
                   Contact Us
                 </Link>
@@ -136,7 +136,7 @@ export function Navbar() {
           </div>
         )}
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -3,7 +3,7 @@ const PricingNew = () => {
   return (
     <div id="pricing" className=""> 
       <section className="text-gray-600 body-font overflow-hidden">
-        <div className="px-5 py-12 mx-auto">
+        <div className="px-5 py-8 mx-auto">
           <div className="flex flex-col text-center w-full mb-16">
             <h1 className="mb-8 text-6xl font-bold tracking-tight text-primary">
               Pricing
@@ -68,8 +68,8 @@ const PricingNew = () => {
               </div>
             </div>
             <div className="p-4 xl:w-1/3 md:w-1/2 w-full">
-              <div className="h-full p-6 rounded-lg border-2 border-primary flex flex-col relative overflow-hidden hover:scale-110 duration-500 gap-6 ">
-                <span className="bg-primary text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
+              <div className="h-full p-6 rounded-lg border-2 border-primary bg-blue-500 text-white flex flex-col relative overflow-hidden hover:scale-110 duration-500 gap-6 ">
+                <span className="bg-white text-black px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
                   POPULAR
                 </span>
                 <div className="flex flex-col justify-center items-center gap-2">
@@ -79,13 +79,13 @@ const PricingNew = () => {
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-4 justify-center items-center">
                     <span>
-                      <strike className="text-gray-400">₹35,000</strike>
+                      <strike className="text-gray-900">₹35,000</strike>
                     </span>
                     <span className="bg-purple-100 text-purple-800 p-1 rounded-r-full rounded-l-full">
                       SAVE 31%
                     </span>
                   </div>
-                  <span className="text-black text-4xl text-center">
+                  <span className="text-4xl text-center">
                     ₹24,000
                   </span>
                 </div>

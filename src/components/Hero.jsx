@@ -22,8 +22,8 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
-          <img className="object-cover lg:h-[700px]" src="hero.svg" alt="" />
+        <div className="py-6 relative lg:col-span-5 lg:-mr-8 xl:col-span-6 flex items-center justify-center">
+          <img className="w-4/5 " src="hero.svg" alt="hero image" />
         </div>
       </div>
     </section>

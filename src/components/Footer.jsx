@@ -28,14 +28,14 @@ export function Footer() {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="https://atomsgroup.net" className="hover:underline">
+                  <a href="https://atomsgroup.net" className="hover:text-black">
                     Atoms Digital Solutions
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
                     href="https://atomsgroup.net"
-                    className="hover:underline"
+                    className="hover:text-black"
                   >
                     Atoms Education
                   </a>
@@ -43,7 +43,7 @@ export function Footer() {
                 <li>
                   <a
                     href="https://atomsgroup.net"
-                    className="hover:underline"
+                    className="hover:text-black"
                   >
                     Atoms Visual Media
                   </a>
@@ -57,12 +57,12 @@ export function Footer() {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:text-black">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:text-black">
                     Terms &amp; Conditions
                   </a>
                 </li>

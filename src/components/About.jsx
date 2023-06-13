@@ -3,16 +3,16 @@ const About = () => {
   return (
     <section className="relative w-full bg-primary" id="about">
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-        <div className="relative lg:col-span-5 lg:-ml-8 xl:col-span-6">
+        <div className="relative lg:col-span-5 lg:-ml-8 xl:col-span-6 flex items-center justify-center">
           <img
-            className="object-cover lg:h-[700px]"
+            className="w-4/5"
             src="about-us.svg"
-            alt=""
+            alt="about us image"
           />
         </div>
 
-        <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
-          <h1 className="mt-8 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-6xl">
+        <div className="flex flex-col justify-center px-4 py-12 md:py-12 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-12 xl:col-span-6">
+          <h1 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-6xl">
             Welcome to Atoms Group
           </h1>
           <p className="mt-8 text-lg text-white">
