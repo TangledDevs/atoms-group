@@ -16,10 +16,7 @@ const menuItems = [
     name: "Companies",
     href: "companies",
   },
-  {
-    name: "Plans",
-    href: "pricing",
-  },
+ 
   {
     name: "Testimonials",
     href: "testimonials",
@@ -108,16 +105,19 @@ export function Navbar() {
                 </div>
                 <div className="mt-6">
                   <nav className="grid gap-y-4">
-                    {menuItems.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
-                      >
-                        <span className=" text-base font-medium text-gray-900">
-                          {item.name}
-                        </span>
-                      </a>
+                    {menuItems.map((item,index) => (
+                      <Link
+                      key={index}
+                      activeClass="active"
+                      to={item.href}
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                      duration={500}
+                      className="font-semibold cursor-pointer px-2 hover:bg-white hover:rounded-full hover:py-[0.3rem]"
+                    >
+                      {item.name}
+                    </Link>
                     ))}
                   </nav>
                 </div>

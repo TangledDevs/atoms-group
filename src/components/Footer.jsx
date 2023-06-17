@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link } from "react-scroll";
 export function Footer() {
   return (

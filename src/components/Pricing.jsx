@@ -1,244 +1,194 @@
-
+import { BsCheckCircleFill } from "react-icons/bs";
 const Pricing = () => {
   return (
-    <section className="relative overflow-hidden">
-      <div className="relative mx-auto max-w-7xl px-4">
-        <div className="mx-auto mb-24 max-w-2xl text-center lg:max-w-5xl">
-          <h1 className="mb-8 text-4xl font-bold tracking-tight text-primary sm:text-6xl lg:text-7xl">
-            Pricing
-          </h1>
-          
-        </div>
-        <div className="mx-auto max-w-5xl">
-          <div className="flex flex-wrap items-center">
-            <div className="w-full lg:-mr-2 lg:w-1/3">
-              <div className="mx-auto max-w-sm rounded-md border border-primary bg-white pb-20 pl-5 pr-8 pt-6 lg:pb-8">
-                <span className="mb-2 block text-sm font-semibold text-gray-400">
-                  PREMIUM
-                </span>
-                <span className="flex items-end">
-                  <span className="text-4xl font-extrabold leading-none">
-                    $150
-                  </span>
-                  <span className="text-sm font-semibold">/month</span>
-                </span>
-                <div className="mt-7 border-t border-gray-100 pt-5">
-                  <ul className="mb-10">
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        No Discount
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Basic Support
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Ads Banner Free
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Design Style
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Component Library
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        All limited links
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Own analytics platform
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Chat support
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Optimize hashtags
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Unlimited users
-                      </span>
-                    </li>
-                  </ul>
-                  <button
-                    type="button"
-                    className="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                  >
-                    Choose Plan
-                  </button>
+    <div id="pricing" className=""> 
+      <section className="text-gray-600 body-font overflow-hidden">
+        <div className="px-5 py-8 mx-auto">
+          <div className="flex flex-col text-center w-full mb-16">
+            <h1 className="mb-8 text-6xl font-bold tracking-tight text-primary">
+              Pricing
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
+              Browse from the available plans
+            </p>
+          </div>
+          <div className="flex flex-wrap -m-4 justify-center lg:px-20">
+					<div className="p-4 xl:w-1/3 md:w-1/2 w-full">
+              <div className="h-full p-6 rounded-lg border-2 flex flex-col relative overflow-hidden hover:scale-110 duration-500 gap-6">
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <h2 className="text-xl font-bold">Basic Plan</h2>
+                  <p className="text-sm">Best Plan for Starters</p>
                 </div>
-              </div>
-            </div>
-            <div className="-mt-4 w-full lg:-mt-0 lg:w-1/3">
-              <div className="pt-22 relative mx-auto max-w-sm rounded-lg bg-primary px-10 pb-16">
-                <div className="absolute left-1/2 top-0 inline-flex -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-white p-2">
-                  <div className="flex-shrink-0 rounded-full bg-primary px-5 py-4 text-sm font-semibold uppercase text-white">
-                    Most Popular
+                <div className="flex flex-col gap-4">
+                  <div className="flex gap-4 justify-center items-center">
+                    <span>
+                      <strike className="text-gray-400">₹20,000</strike>
+                    </span>
+                    <span className="bg-purple-100 text-primary p-1 rounded-r-full rounded-l-full">
+                      SAVE 25%
+                    </span>
                   </div>
-                </div>
-                <span className="mb-2 block pt-10 text-sm font-semibold text-white">
-                  GOLD
-                </span>
-                <span className="flex items-end text-white">
-                  <span className="text-4xl font-extrabold leading-none">
-                    $100
+                  <span className="text-black text-4xl text-center">
+                    ₹15,000
                   </span>
-                  <span className="text-sm font-semibold">/month</span>
-                </span>
-                <div className="mt-7 border-t border-black pt-5">
-                  <ul className="mb-10">
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        No Discount
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        Basic Support
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        Ads Banner Free
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        Design Style
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        Component Library
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        All limited links
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        Own analytics platform
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        Chat support
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        Optimize hashtags
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-white">
-                        Unlimited users
-                      </span>
-                    </li>
-                  </ul>
-                  <button
-                    type="button"
-                    className="rounded-md bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                  >
-                    Choose Plan
-                  </button>
+                </div>
+                <hr />
+                <div>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    Pages: According to Requirement
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    1 Year Free Hosting ( Unlimited Space )
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    Dynamic Website
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    1 Year 24/7 Free Support For Website
+                  </p>
+                  <p className="flex items-center mb-6">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    100% Responsive Website
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="-mt-4 w-full lg:-ml-2 lg:-mt-0 lg:w-1/3">
-              <div className="rounded-b-5xl lg:rounded-r-5xl mx-auto max-w-sm border border-primary bg-white pb-8 pl-8 pr-5 pt-12 lg:rounded-b-none lg:pt-6">
-                <span className="mb-2 block text-sm font-semibold text-gray-400">
-                  PREMIUM
+            <div className="p-4 xl:w-1/3 md:w-1/2 w-full">
+              <div className="h-full p-6 rounded-lg border-2 border-primary bg-blue-500 text-white flex flex-col relative overflow-hidden hover:scale-110 duration-500 gap-6 ">
+                <span className="bg-white text-black px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
+                  POPULAR
                 </span>
-                <span className="flex items-end">
-                  <span className="text-4xl font-extrabold leading-none">
-                    $150
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <h2 className="text-xl font-bold">Standard Plan</h2>
+                  <p className="text-sm">Pay as Per Your Needs</p>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="flex gap-4 justify-center items-center">
+                    <span>
+                      <strike className="text-gray-900">₹35,000</strike>
+                    </span>
+                    <span className="bg-purple-100 text-purple-800 p-1 rounded-r-full rounded-l-full">
+                      SAVE 31%
+                    </span>
+                  </div>
+                  <span className="text-4xl text-center">
+                    ₹24,000
                   </span>
-                  <span className="text-sm font-semibold">/month</span>
-                </span>
-                <div className="mt-7 border-t border-gray-100 pt-5">
-                  <ul className="mb-10">
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        No Discount
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Basic Support
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Ads Banner Free
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Design Style
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Component Library
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        All limited links
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Own analytics platform
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Chat support
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Optimize hashtags
-                      </span>
-                    </li>
-                    <li className="mb-6 flex items-center">
-                      <span className="ml-2 text-sm text-gray-900">
-                        Unlimited users
-                      </span>
-                    </li>
-                  </ul>
-                  <button
-                    type="button"
-                    className="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                  >
-                    Choose Plan
-                  </button>
+                </div>
+                <hr />
+                <div>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    Pages: According to Requirement
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    1 Year Free Hosting ( Unlimited Space )
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    Dynamic Website
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    1 Year 24/7 Free Support For Website
+                  </p>
+                  <p className="flex items-center mb-6">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    100% Responsive Website
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 xl:w-1/3 md:w-1/2 w-full">
+              <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden  hover:scale-110 duration-500 gap-6">
+                <div className="flex flex-col justify-center items-center gap-2">
+                  <h2 className="text-xl font-bold">Custom Plan</h2>
+                  <p className="text-sm">Pay as Per Your Needs</p>
+                </div>
+                <div className="flex flex-col">
+                  {/* <div className="flex gap-4 justify-center items-center">
+                    <span>
+                      <strike className="text-gray-400">₹??,???</strike>
+                    </span>
+                    <span className="bg-purple-100 text-purple-800 p-1 rounded-r-full rounded-l-full">
+                      SAVE 83%
+                    </span>
+                  </div> */}
+                  <span className="text-black text-4xl text-center">
+                    ₹??,???
+                  </span>
+                </div>
+                <hr />
+                <div>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    Pages: According to Requirement
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    1 Year Free Hosting ( Unlimited Space )
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    Dynamic Website
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    1 Year 24/7 Free Support For Website
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    100% Responsive Website
+                  </p>
+                  <p className="flex items-center mb-2">
+                    <span className="w-4 h-4 mr-2 inline-flex items-center justify-center text-white rounded-full flex-shrink-0">
+                      <BsCheckCircleFill size={20} className="text-green-500" />
+                    </span>
+                    Annual Maintenace @3000
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
