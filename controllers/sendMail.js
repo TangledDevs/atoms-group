@@ -14,9 +14,9 @@ export const sendMail = async (req,res) => {
     // Email details
     const mailOptions = {
       from: "vijaykumarreddytalakola@gmail.com",
-      to: req.body.email,
-      subject: "Message from Atoms",
-      text: req.body.message,
+      to: "tangleddevs@gmail.com",
+      subject: "Message from Atoms Websiter",
+      text: req.body,
     };
 
     // Send the email
