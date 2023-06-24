@@ -47,8 +47,7 @@ const Team = () => {
               Our Team
             </h2>
             <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-              Explore the whole collection of open-source web components and
-              elements built with the utility classNamees from Tailwind
+              Some Content about the team
             </p>
           </div>
           <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
