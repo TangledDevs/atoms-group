@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-      name: "",
-      email: "",
-      message: "",
-    });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-    const handleInputChange = (e) => {
+  const handleInputChange = (e) => {
     setFormData((prevData) => ({
       ...prevData,
       [e.target.name]: e.target.value,
@@ -16,11 +16,11 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    console.log(formData)
+    console.log(formData);
     e.preventDefault();
     try {
       const res = await axios.post("http://localhost:5000/mail", formData);
-      if(res.status === 200){
+      if (res.status === 200) {
         console.log("Email sent successfully!");
         setFormData({
           name: "",
@@ -46,7 +46,11 @@ const Contact = () => {
           </p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
-          <form onSubmit={handleSubmit} className="flex flex-wrap -m-2" action="#">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-wrap -m-2"
+            action="#"
+          >
             <div className="p-2 w-1/2">
               <div className="relative">
                 <label
@@ -101,9 +105,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="p-2 w-full">
-              <button
-                className="flex mx-auto text-white bg-primary border-0 py-2 px-8 focus:outline-none rounded text-lg"
-              >
+              <button className="flex mx-auto text-white bg-primary border-0 py-2 px-8 focus:outline-none rounded text-lg">
                 Submit
               </button>
             </div>

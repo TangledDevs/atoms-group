@@ -1,3 +1,5 @@
+import { stagger, animate } from "framer-motion"
+
 
 const testimonials = [
   {
@@ -25,7 +27,7 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <section className="py-12 bg-gray-100" id="testimonials">
+    <section className="py-12 bg-gray-100 item" id="testimonials">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">
           Our Client&apos;s Words
