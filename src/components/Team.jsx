@@ -40,14 +40,15 @@ const teamMembers = [
 const Team = () => {
   return (
     <div id="team" className="">
-      <section className="dark:bg-gray-900">
+      <section className="">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-10 lg:px-6">
           <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-            <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-primary">
               Our Team
             </h2>
-            <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-              Some Content about the team
+            <p className="font-light text-secondary sm:text-xl">
+              Explore the whole collection of open-source web components and
+              elements built with the utility classNamees from Tailwind
             </p>
           </div>
           <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -62,7 +63,7 @@ const Team = () => {
                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                     alt="Bonnie Avatar"
                   />
-                  <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h3 className="mb-1 text-2xl font-bold tracking-tight text-secondary">
                     <p>{member.name}</p>
                   </h3>
                   <p>{member.position}</p>
@@ -70,7 +71,7 @@ const Team = () => {
                     <li>
                       <a
                         href="#"
-                        className="text-[#39569c] hover:text-gray-900 dark:hover:text-white"
+                        className="text-[#39569c] hover:text-secondary"
                       >
                         <svg
                           className="w-6 h-6"
@@ -89,7 +90,7 @@ const Team = () => {
                     <li className="hover:scale-105">
                       <a
                         href={member.twitter}
-                        className="text-[#39569c] hover:text-gray-900 dark:hover:text-white"
+                        className="text-[#00acee] hover:text-secondary"
                       >
                         <svg
                           className="w-6 h-6"
@@ -104,7 +105,7 @@ const Team = () => {
                     <li className="flex items-center">
                       <a
                         href={member.instagram}
-                        className="text-[#e245d8] hover:text-gray-900 dark:hover:text-white dark:text-gray-300"
+                        className="text-[#e245d8] hover:text-secondary"
                       >
                         <FaInstagram size={20} />
                       </a>

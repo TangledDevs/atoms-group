@@ -1,30 +1,31 @@
 import nodemailer from "nodemailer";
-export const sendMail = async (req, res) => {
+export const sendMail = async (req,res) => {
+  console.log(`Content in request Body :`,req.body)
   try {
     // Create a transporter
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "guestcountforr3@gmail.com",
-        pass: "Guest1234567",
+        user: "vijaykumarreddytalakola@gmail.com",
+        pass: "nusaxvkoulwuntrt",
       },
     });
 
     // Email details
     const mailOptions = {
-      from: req.email,
-      to: "guestcountforr3@gmail.com",
-      subject: "Testing Nodemailer with Gmail",
-      text: "Hello from Node.js!",
+      from: "vijaykumarreddytalakola@gmail.com",
+      to: "tangleddevs@gmail.com",
+      subject: "Message from Atoms Websiter",
+      text: req.body,
     };
 
     // Send the email
-    transporter.sendMail(mailOptions, (error, info) => {
+    transporter.sendMail(mailOptions, (error) => {
       if (error) {
         console.log("Error occurred while sending email:", error.message);
       } else {
-        console.log("Email sent successfully!");
-        console.log("Message ID:", info.messageId);
+        console.log("Email sent successfully from server!");
+        res.status(200).json({ message: "Email sent successfully from atoms" });
       }
     });
   } catch (err) {

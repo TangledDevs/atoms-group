@@ -1,14 +1,18 @@
 import express from "express";
-const app = express();
 import dotenv from "dotenv";
-dotenv.config();
-import process from "process";
+import cors from "cors";
 import { sendMail } from "./controllers/sendMail.js";
+
+const app = express();
+app.use(express.json())
+app.use(cors());
+dotenv.config();
+
 app.get("/", (req, res) => {
   res.status(200).json({ message: "Server Up and running" });
 });
 
-app.get("/mail", sendMail);
+app.post("/mail", sendMail);
 
 const start = async () => {
   try {

@@ -1,8 +1,7 @@
-
 import { Link } from "react-scroll";
 export function Footer() {
   return (
-    <footer className="bg-slate-100 dark:bg-gray-900">
+    <footer className="bg-slate-100">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -15,47 +14,45 @@ export function Footer() {
               duration={500}
               className="font-bold cursor-pointer"
             >
-              <img src={"Atoms-Logo.png"} className="h-8 mr-3 mb-3" alt="Atoms" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <img
+                src={"Atoms-Logo.png"}
+                className="h-8 mr-3 mb-3"
+                alt="Atoms"
+              />
+              <span className="self-center text-2xl font-semibold whitespace-nowrap">
                 Atoms Group
               </span>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-secondary uppercase">
                 Companies
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400 font-medium">
+              <ul className="text-gray-600 font-medium">
                 <li className="mb-4">
                   <a href="https://atomsgroup.net" className="hover:text-black">
                     Atoms Digital Solutions
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a
-                    href="https://atomsgroup.net"
-                    className="hover:text-black"
-                  >
+                  <a href="https://atomsgroup.net" className="hover:text-black">
                     Atoms Education
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://atomsgroup.net"
-                    className="hover:text-black"
-                  >
+                  <a href="https://atomsgroup.net" className="hover:text-black">
                     Atoms Visual Media
                   </a>
                 </li>
               </ul>
             </div>
-            
+
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
                 Legal
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400 font-medium">
+              <ul className="text-gray-600 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:text-black">
                     Privacy Policy
@@ -70,10 +67,11 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © {new Date().getFullYear()}{" Atoms"}
+          <span className="text-sm text-gray-500 sm:text-center">
+            © {new Date().getFullYear()}
+            {" Atoms"}
             <Link
               activeClass="active"
               to={"home"}
@@ -87,10 +85,7 @@ export function Footer() {
             </Link>
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <a href="#" className="text-gray-500 hover:text-gray-900">
               <svg
                 className="w-5 h-5"
                 fill="currentColor"
@@ -105,10 +100,7 @@ export function Footer() {
               </svg>
               <span className="sr-only">Facebook page</span>
             </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <a href="#" className="text-gray-500 hover:text-gray-900">
               <svg
                 className="w-5 h-5"
                 fill="currentColor"
@@ -123,10 +115,7 @@ export function Footer() {
               </svg>
               <span className="sr-only">Instagram page</span>
             </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <a href="#" className="text-gray-500 hover:text-gray-900">
               <svg
                 className="w-5 h-5"
                 fill="currentColor"
@@ -137,8 +126,6 @@ export function Footer() {
               </svg>
               <span className="sr-only">Twitter page</span>
             </a>
-            
-            
           </div>
         </div>
       </div>
